@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital@1&family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.Influencer-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+
+}
+.products{
+    margin-right: 290px;
+}
+.Influencer-info a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+.fa-magnifying-glass{
+    margin-left: 40px;
+}
+.fa-cart-shopping{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*-----------------
+ my journey
+ ---------------- */
+ .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+ }
+ .journeys{
+    display: flex;
+ }
+ .journey p{
+    font-size: 16px;
+ }
+ 
+ .Preebook-now {
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(orange,yellow);
+    padding: 5px;
+    border-radius: 5px;
+ }
+ .camera img{
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+ }
+ hr{
+    border: 1px solid grey;
+    width: 900px;
+    margin-left: 290px;
+    margin-top: 69px;
+ }
+ /*------------------
+  article style 
+  -----------------*/
+  .logoses{
+    margin-left: 300px;
+    
+  }
+  .logos{
+   margin-right: 40px;
+   
+  }
+  .horijental{
+    margin-top: 10px;
+  }
+  /*-------------------
+   blogs styles
+   ------------------- */
+   .blogs{
+    width: 315px;
+    height: 476px;
+    padding: 20px 14px 3px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+   }
+  .containers{
+    flex-direction: column;
+  }
+ 
+   
+   
+   .blog, .thumble img{
+    margin-bottom: -13px;
+   }
+   .blog, .thumble h2{
+    margin-bottom: -15px;
+   }
+   .blog-info{
+    color: #FB8200;
+    margin-top: 20px;
+    margin-bottom:-12px;
+   }
+   .fa-star{
+    font-size: 12px;
+   }
+   .blog-point{
+    color: black;
+   }
+  
