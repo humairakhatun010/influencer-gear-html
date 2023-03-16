@@ -1,113 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital@1&family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap');
-body{
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital@1&family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
 }
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.Influencer-products{
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-
+.Influencer-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.products{
-    margin-right: 290px;
+.products {
+  margin-right: 290px;
 }
-.Influencer-info a{
-    text-decoration: none;
-    margin-left: 40px;
-    color: black;
+.Influencer-info a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: black;
 }
-.fa-magnifying-glass{
-    margin-left: 40px;
+.fa-magnifying-glass {
+  margin-left: 40px;
 }
-.fa-cart-shopping{
-    margin-left: 40px;
-    margin-right: 40px;
+.fa-cart-shopping {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 /*-----------------
  my journey
  ---------------- */
+
  .container{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
- }
- .journeys{
-    display: flex;
- }
- .journey p{
-    font-size: 16px;
- }
- 
- .Preebook-now {
-    font-size: 15px;
-    text-decoration: none;
-    color: #FFFFFF;
-    background-image: linear-gradient(orange,yellow);
-    padding: 5px;
-    border-radius: 5px;
- }
- .camera img{
-    width: 400px;
-    height: 300px;
-    margin-left: 50px;
- }
- hr{
-    border: 1px solid grey;
-    width: 900px;
-    margin-left: 290px;
-    margin-top: 69px;
- }
- /*------------------
-  article style 
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 50px;
+  }
+.journey{
+  margin-top: 67px;
+}
+.journey p {
+  font-size: 16px;
+  margin-top: -16px;
+}
+.Preebook-now {
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  background-image: linear-gradient(orange, yellow);
+  padding: 5px;
+  border-radius: 5px;
+}
+.camera img {
+  width: 419px;
+  height: 332px;
+}
+ .camera-left{
+  position: relative;
+  right:133px ;
+ } 
+.journey-left{
+  position: relative;
+  left: 150px;
+}
+
+
+/*------------------
+  logos style 
   -----------------*/
-  .logoses{
-    margin-left: 300px;
-    
-  }
-  .logos{
-   margin-right: 40px;
-   
-  }
-  .horijental{
-    margin-top: 10px;
-  }
-  /*-------------------
+.logoses {
+  position: relative;
+  left: 325px;
+}
+.logos-info{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.logos{
+  margin-right: 25px;
+}
+hr{
+  border: 1px solid gray;
+  width: 900px;
+  position: relative;
+  left: 280px;
+}
+
+/*-------------------
    blogs styles
    ------------------- */
-   .blogs{
-    width: 315px;
-    height: 476px;
-    padding: 20px 14px 3px 24px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-   }
-  .containers{
-    flex-direction: column;
+.top-blog {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  left: 250px;
+
+
+
+
+
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ justify-content: center;
+}
+.blog {
+  margin-bottom: 40px;
+  margin-right: 10px;
+  width: 300px;
+  height: 476px;
+  padding: 15px 14px 3px 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.blog-img {
+  margin-bottom: -7px;
+}
+.blog-h3 {
+  margin-bottom: -8px;
+}
+.blog-detail {
+  color: #fb8200;
+  margin-top: 15px;
+  margin-bottom: -12px;
+}
+span {
+  color: black;
+}
+
+@media only screen and (max-width: 1540px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
- 
+}
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 668px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start
+  }
+  .journeys{
+    justify-items: center;
+
+  }
+  .journey{
+    margin-left: -85px;
+    width: 300px;
+    margin-bottom: 30px;
+    
+  }
+  .camera{
+    margin-left: -155px;
+    margin-bottom: -24px;
+  }
+  .top-order{
+    order: 25;
+  }
+  .last-order{
+    order: 2;
+  }
+  /* logoses */
+  hr{
+    display: none;
+  }
+  .logoses{
+    font-size: 0px;
+    width: 490px;
+    margin-left: 29px;
    
+  }
+  .logo{
+    margin-left: 30px;
+  }
+  /* blogs */
+  .top-blog h1{
+    
+    margin-left: 46px;
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
    
-   .blog, .thumble img{
-    margin-bottom: -13px;
-   }
-   .blog, .thumble h2{
-    margin-bottom: -15px;
-   }
-   .blog-info{
-    color: #FB8200;
-    margin-top: 20px;
-    margin-bottom:-12px;
-   }
-   .fa-star{
-    font-size: 12px;
-   }
-   .blog-point{
-    color: black;
-   }
-  
+  }
+}
